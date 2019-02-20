@@ -14,6 +14,8 @@ class PontoTuristico(models.Model):
     endereco = models.ForeignKey(Endereco, on_delete=models.CASCADE, null=True, blank=True)
     foto = models.ImageField(upload_to='pontos_turisticos', null=True, blank=True)
 
+
+
     """
     forma de manipular dados antes de enviar o retorno (metodo recomendado)
     """
